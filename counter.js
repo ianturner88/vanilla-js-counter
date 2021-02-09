@@ -1,6 +1,6 @@
-const increaseCounter = document.querySelector('[increase-button]');
-const decreaseCounter = document.querySelector('[decrease-button]');
-const operand = document.querySelector('[operand]');
+const increaseCounter = document.querySelector('[data-increase]');
+const decreaseCounter = document.querySelector('[data-decrease]');
+const operand = document.querySelector('[data-operand]');
 
 class Counter {
   constructor() {
@@ -9,12 +9,12 @@ class Counter {
 
   increaseCount() {
     this.count += 1;
-    Counter.display();
+    counter.display();
   }
 
   decreaseCount() {
     this.count -= 1;
-    Counter.display();
+    counter.display();
   }
 
   display() {
@@ -22,12 +22,17 @@ class Counter {
   }
 }
 
+const counter = new Counter(
+  // initialize the counter to zero
+  operand
+);
+
 increaseCounter.addEventListener('click', (e) => {
   console.log('Hello');
-  Counter.increaseCount();
+  counter.increaseCount();
 });
 
 decreaseCounter.addEventListener('click', (e) => {
   console.log('Hello');
-  Counter.decreaseCount();
+  counter.decreaseCount();
 });
