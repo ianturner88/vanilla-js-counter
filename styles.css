@@ -24,7 +24,9 @@
   border: none;
   cursor: pointer;
   font-size: 100%;
+  border: 1px solid blue;
   border-radius: 35px;
+  min-width: 150px;
 }
 
 .counter-container > button:hover {
