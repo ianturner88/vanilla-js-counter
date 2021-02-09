@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-js-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "counter.js",
+  "scripts": {
+    "deploy": "gh-pages -d counter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianturner88/vanilla-js-counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://ianturner88.github.io/vanilla-js-counter",
+  "bugs": {
+    "url": "https://github.com/ianturner88/vanilla-js-counter/issues"
+  },
+  "homepage": "https://github.com/ianturner88/vanilla-js-counter#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
